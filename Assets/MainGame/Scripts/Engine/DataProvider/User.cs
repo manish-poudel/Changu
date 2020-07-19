@@ -1,18 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class User : MonoBehaviour
+﻿// class to provide user information
+public class User
 {
-    // Start is called before the first frame update
-    void Start()
+    private string _name;
+
+    public User(string name)
     {
-        
+        _name = name;
     }
 
-    // Update is called once per frame
-    void Update()
+    public string name
     {
-        
+        get { return _name; }
     }
 }

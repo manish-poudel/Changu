@@ -1,18 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Bug : MonoBehaviour
+﻿// Abstract class of Bug
+public abstract class Bug : IBug
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string type;
+    public bool infectious;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+    public int damgedLevel;
+
+    public abstract void Infect();
 }
