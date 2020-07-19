@@ -1,18 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Worm : MonoBehaviour
+﻿using UnityEngine;
+public class Worm : Bug
 {
-    // Start is called before the first frame update
-    void Start()
+    public Worm()
     {
-        
+        this.infectious = true;
+        this.type = "Worm";
+        this.damgedLevel = 0;
     }
-
-    // Update is called once per frame
-    void Update()
+    public override void Infect()
     {
-        
+        if (infectious)
+        {
+            Debug.Log("Infecting the plant...");
+            damgedLevel++;
+        }
+        else
+        {
+
+        }
     }
 }
+
