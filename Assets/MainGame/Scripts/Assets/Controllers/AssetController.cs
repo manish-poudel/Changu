@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
 using GoogleARCore;
-using System.Collections;
-using System.Collections.Generic;
 
 public class AssetController : MonoBehaviour
 {
 
     private GameObject assetInstance;
     private DetectedPlane detectedPlane;
-    public GameObject donutPrefab;
+    public GameObject prefab;
     public bool spawn = true;
 
     // Start is called before the first frame update
@@ -45,7 +43,7 @@ public class AssetController : MonoBehaviour
 
 
         Anchor anchor = detectedPlane.CreateAnchor(new Pose(detectedPlane.CenterPose.position, Quaternion.identity));
-        assetInstance = Instantiate(donutPrefab, detectedPlane.CenterPose.position, Quaternion.identity, anchor.transform);
+        assetInstance = Instantiate(prefab, detectedPlane.CenterPose.position, Quaternion.identity, anchor.transform);
         assetInstance.transform.localScale = new Vector3(10f, 10f, 10f);
         assetInstance.transform.SetParent(anchor.transform);
     }

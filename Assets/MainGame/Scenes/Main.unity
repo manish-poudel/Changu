@@ -187,52 +187,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &772078942
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 772078944}
-  - component: {fileID: 772078943}
-  m_Layer: 0
-  m_Name: Donut
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &772078943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772078942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23be3789701d3ba44b85acf782a0a7c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donutPrefab: {fileID: 3605505830164655270, guid: 0a9daf048489b2e42b2f9b8cbb0e5820,
-    type: 3}
-  spawn: 1
---- !u!4 &772078944
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772078942}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &1605660978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -357,7 +311,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1988076056}
   - component: {fileID: 1988076059}
-  - component: {fileID: 1988076058}
   - component: {fileID: 1988076057}
   m_Layer: 0
   m_Name: SceneController
@@ -394,19 +347,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handleScaleInput: 1
   adjustScale: 0
---- !u!114 &1988076058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988076055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85fda08f63352e940853cbb2eb3ade78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  assetController: {fileID: 772078943}
 --- !u!114 &1988076059
 MonoBehaviour:
   m_ObjectHideFlags: 0
